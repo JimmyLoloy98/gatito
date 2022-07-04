@@ -751,3 +751,76 @@ Recipe Template
   grid-column-start: 2;
   margin-bottom: 40px;
 }
+
+
+.recipe-info{
+  position: relative;
+  overflow-y: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  height: 12.7rem;
+  border-radius: var(--borderRadius);
+}
+.recipe-img{
+  height: 12.7rem;
+  margin-bottom: 0;
+  
+  transition: .5s;
+  margin-top: 0%;
+}
+.recipe-link{
+  position: absolute;
+  width: 100%;
+  background-color: var(--textColor);
+  color: white;
+  transition: .5s;
+ 
+  height: 2.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -2.7rem;
+}
+.recipe-info:hover .recipe-link{
+  bottom: 0%;
+}
+.recipe-info:hover .recipe-img{
+  margin-top: -2rem;
+}
+/* .recipe{
+
+  position: relative;
+  overflow-y: hidden;
+  transition: .5s;
+  padding: 10% 0%;
+
+}
+.recipe-link{
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  background-color: var(--textColor);
+  color: white;
+  padding: 10px 0;
+  margin-top: 10px;
+  height: 16%; 
+  transition: .5s;
+  bottom: -16%;
+ 
+}
+.recipe-info{
+  height: 80%;
+}
+
+.recipe:hover{
+  padding-top: 0%;
+  padding-bottom: 16%;
+}
+ .recipe:hover .recipe-link{
+  bottom: 0%;
+} */
+/*
+.recipe:hover .recipe-info{
+  height: 100%;
+} */
