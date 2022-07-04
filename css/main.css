@@ -757,3 +757,12 @@ Recipe Template
   line-height: 0%;
 
 }
+.nav-links a:hover::before {
+  content: "[";
+ 
+}
+
+.nav-links a:hover::after {
+  content: "]";
+ 
+}
