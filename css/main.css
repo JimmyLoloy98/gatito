@@ -434,10 +434,10 @@ Recipes
 ===============
 */
 
-.recipes-container {
+/* .recipes-container {
   display: grid;
   gap: 2rem 1rem;
-}
+} */
 
 .recipes-list {
   display: grid;
@@ -449,24 +449,31 @@ Recipes
   display: flex;
   flex-direction: column;
   padding-bottom: 3rem;
-  /* background: blue; */
+  align-items: center;
 }
 .tags-container h4 {
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
 .tags-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  display: flex;
+}
+.tags-list li {
+  /* text-align: center; */
+  margin-left: 3rem;
+  flex: 1;
 }
 .tags-list a {
-  text-transform: capitalize;
-  display: block;
-  color: var(--grey-500);
-  transition: var(--transition);
+  color: white;
+  background-color: #EDEDED;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 60px;
 }
 .tags-list a:hover {
-  color: var(--primary-500);
+  color: white;
+  background-color: #655CFF;
 }
 .recipe {
   display: block;
@@ -515,7 +522,7 @@ Recipes
     /* background: blue; */
   }
   .tags-list {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr;
   }
 }
