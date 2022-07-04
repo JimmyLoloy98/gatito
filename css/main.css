@@ -434,10 +434,10 @@ Recipes
 ===============
 */
 
-.recipes-container {
+/* .recipes-container {
   display: grid;
   gap: 2rem 1rem;
-}
+} */
 
 .recipes-list {
   display: grid;
@@ -449,24 +449,31 @@ Recipes
   display: flex;
   flex-direction: column;
   padding-bottom: 3rem;
-  /* background: blue; */
+  align-items: center;
 }
 .tags-container h4 {
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
 .tags-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  display: flex;
+}
+.tags-list li {
+  /* text-align: center; */
+  margin-left: 3rem;
+  flex: 1;
 }
 .tags-list a {
-  text-transform: capitalize;
-  display: block;
-  color: var(--grey-500);
-  transition: var(--transition);
+  color: white;
+  background-color: #EDEDED;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 60px;
 }
 .tags-list a:hover {
-  color: var(--primary-500);
+  color: white;
+  background-color: #655CFF;
 }
 .recipe {
   display: block;
@@ -496,6 +503,10 @@ Recipes
   .recipe-img {
     height: 10rem;
   }
+  .tags-list {
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -514,10 +525,7 @@ Recipes
     order: 0;
     /* background: blue; */
   }
-  .tags-list {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+  
 }
 
 @media screen and (min-width: 1200px) {
@@ -752,7 +760,6 @@ Recipe Template
   margin-bottom: 40px;
 }
 
-
 .recipe-info{
   position: relative;
   overflow-y: hidden;
@@ -764,7 +771,6 @@ Recipe Template
 .recipe-img{
   height: 12.7rem;
   margin-bottom: 0;
-  
   transition: .5s;
   margin-top: 0%;
 }
@@ -787,40 +793,8 @@ Recipe Template
 .recipe-info:hover .recipe-img{
   margin-top: -2rem;
 }
-/* .recipe{
 
-  position: relative;
-  overflow-y: hidden;
-  transition: .5s;
-  padding: 10% 0%;
-
+.contact-info{
+  align-self: flex-start;
+  line-height: 0%;
 }
-.recipe-link{
-  width: 100%;
-  display: inline-block;
-  position: absolute;
-  text-align: center;
-  background-color: var(--textColor);
-  color: white;
-  padding: 10px 0;
-  margin-top: 10px;
-  height: 16%; 
-  transition: .5s;
-  bottom: -16%;
- 
-}
-.recipe-info{
-  height: 80%;
-}
-
-.recipe:hover{
-  padding-top: 0%;
-  padding-bottom: 16%;
-}
- .recipe:hover .recipe-link{
-  bottom: 0%;
-} */
-/*
-.recipe:hover .recipe-info{
-  height: 100%;
-} */
