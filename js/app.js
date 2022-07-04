@@ -6,3 +6,4 @@ navBtnDOM.addEventListener("click", () => {
 });
 
 // agregar fecha dinámica aquí
+document.getElementById("date").innerHTML = new Date().getFullYear()
