@@ -751,3 +751,9 @@ Recipe Template
   grid-column-start: 2;
   margin-bottom: 40px;
 }
+
+.contact-info{
+  align-self: flex-start;
+  line-height: 0%;
+
+}
