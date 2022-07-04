@@ -748,4 +748,6 @@ Recipe Template
   align-items: center;
   align-content: center;
   width: 100%;
+  grid-column-start: 2;
+  margin-bottom: 40px;
 }
