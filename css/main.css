@@ -503,6 +503,10 @@ Recipes
   .recipe-img {
     height: 10rem;
   }
+  .tags-list {
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -521,10 +525,7 @@ Recipes
     order: 0;
     /* background: blue; */
   }
-  .tags-list {
-    /* display: grid; */
-    grid-template-columns: 1fr;
-  }
+  
 }
 
 @media screen and (min-width: 1200px) {
