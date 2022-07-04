@@ -741,3 +741,11 @@ Recipe Template
   color: var(--primary-500);
   text-transform: capitalize;
 }
+
+.ver-mas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
