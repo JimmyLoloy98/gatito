@@ -828,12 +828,12 @@ Recipe Template
   70%{margin-left: -200%;}
 }
 
-.nav-links a:hover::before {
+.nav-links .nav-link:hover::before {
   content: "[";
  
 }
 
-.nav-links a:hover::after {
+.nav-links .nav-link:hover::after {
   content: "]";
  
 }
