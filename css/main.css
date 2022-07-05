@@ -434,10 +434,10 @@ Recipes
 ===============
 */
 
-.recipes-container {
+/* .recipes-container {
   display: grid;
   gap: 2rem 1rem;
-}
+} */
 
 .recipes-list {
   display: grid;
@@ -449,24 +449,31 @@ Recipes
   display: flex;
   flex-direction: column;
   padding-bottom: 3rem;
-  /* background: blue; */
+  align-items: center;
 }
 .tags-container h4 {
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
 .tags-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  display: flex;
+}
+.tags-list li {
+  /* text-align: center; */
+  margin-left: 3rem;
+  flex: 1;
 }
 .tags-list a {
-  text-transform: capitalize;
-  display: block;
-  color: var(--grey-500);
-  transition: var(--transition);
+  color: white;
+  background-color: #EDEDED;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 60px;
 }
 .tags-list a:hover {
-  color: var(--primary-500);
+  color: white;
+  background-color: #655CFF;
 }
 .recipe {
   display: block;
@@ -496,6 +503,10 @@ Recipes
   .recipe-img {
     height: 10rem;
   }
+  .tags-list {
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -514,10 +525,7 @@ Recipes
     order: 0;
     /* background: blue; */
   }
-  .tags-list {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+  
 }
 
 @media screen and (min-width: 1200px) {
@@ -752,9 +760,78 @@ Recipe Template
   margin-bottom: 40px;
 }
 
+.recipe-info{
+  position: relative;
+  overflow-y: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  height: 12.7rem;
+  border-radius: var(--borderRadius);
+}
+.recipe-img{
+  height: 12.7rem;
+  margin-bottom: 0;
+  transition: .5s;
+  margin-top: 0%;
+}
+.recipe-link{
+  position: absolute;
+  width: 100%;
+  background-color: var(--textColor);
+  color: white;
+  transition: .5s;
+ 
+  height: 2.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -2.7rem;
+}
+.recipe-info:hover .recipe-link{
+  bottom: 0%;
+}
+.recipe-info:hover .recipe-img{
+  margin-top: -2rem;
+}
+
 .contact-info{
   align-self: flex-start;
   line-height: 0%;
+}
+
+.slider{
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider ul{
+  display: flex;
+  padding: 0;
+  width: 300%;
+  animation: cambio 15s infinite alternate;
+}
+
+.slider li{
+  width: 100%;
+  list-style: none;
+  align-items: center;
+}
+.slider img{
+  width: 66.5rem;
+  height: 25rem;
+}
+
+@keyframes cambio {
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+}
 
 }
 .nav-links a:hover::before {
