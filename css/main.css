@@ -682,6 +682,7 @@ Recipe Template
   flex-wrap: wrap;
   font-size: 0.7em;
   font-weight: 600;
+  margin-top: 31px;
 }
 .recipe-tags a {
   background: var(--primary-500);
@@ -756,11 +757,12 @@ Recipe Template
 }
 
 .recipe-info{
+  text-align: justify;
   position: relative;
   overflow-y: hidden;
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
-  height: 12.7rem;
+  height: 30rem;
   border-radius: var(--borderRadius);
 }
 .recipe-img{
