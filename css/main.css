@@ -798,3 +798,38 @@ Recipe Template
   align-self: flex-start;
   line-height: 0%;
 }
+
+.slider{
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider ul{
+  display: flex;
+  padding: 0;
+  width: 300%;
+  animation: cambio 15s infinite alternate;
+}
+
+.slider li{
+  width: 100%;
+  list-style: none;
+  align-items: center;
+}
+.slider img{
+  width: 66.5rem;
+  height: 25rem;
+}
+
+@keyframes cambio {
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+}
+
