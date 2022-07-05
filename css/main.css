@@ -460,15 +460,14 @@ Recipes
   display: flex;
 }
 .tags-list li {
-  /* text-align: center; */
-  margin-left: 3rem;
+  text-align: center;
   flex: 1;
 }
 .tags-list a {
   color: white;
   background-color: #EDEDED;
   color: black;
-  padding: 0.5rem;
+  padding: 0.4rem;
   border-radius: 60px;
 }
 .tags-list a:hover {
@@ -502,10 +501,6 @@ Recipes
   }
   .recipe-img {
     height: 10rem;
-  }
-  .tags-list {
-    /* display: grid; */
-    /* grid-template-columns: 1fr; */
   }
 }
 
@@ -833,7 +828,6 @@ Recipe Template
   70%{margin-left: -200%;}
 }
 
-}
 .nav-links a:hover::before {
   content: "[";
  
